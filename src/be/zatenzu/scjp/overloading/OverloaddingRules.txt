@@ -1,0 +1,5 @@
+- Must change the argument list
+- Can change the return type
+- Can change access modifier
+- Can declare new or broader checked exceptions
+- A method can be overloaded in the same class or in a subclass

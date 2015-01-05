@@ -1,0 +1,6 @@
+protected
+==========
+If you are in the same package as what you want to access
+OR
+your are in the class of the instance that you use to access and this class extends
+the class of a subclass that contain what you want to access. 
