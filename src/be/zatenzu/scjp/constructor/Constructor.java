@@ -3,6 +3,13 @@ package be.zatenzu.scjp.constructor;
 
 public class Constructor
 {
+  static{
+    System.out.println("This block runs before constructor call");
+  }
+  
+  {
+    System.out.println("This block runs after constructor call");
+  }
   //All access modifiers are allowed
   //Constructor must have the same name as the Class
   public Constructor(){}

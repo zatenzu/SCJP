@@ -12,7 +12,7 @@ public class _Long
   {
     long base10 = 17l;//or 17L = Decimal 17
     long base8 = 021l;//or 021L = Octal 17
-    long base16 = 0x00000011l;//0x00000011L Hexadecimal 17
+    long base16 = 0x00000011l;//0x00000011L  Hexadecimal 17
     
     // default numeric value is an int!!!!
 //    long a = 9223372036854775807;

@@ -3,6 +3,12 @@ package be.zatenzu.scjp.keywords._float;
 
 public class _Float
 {
+  //float f = 23.23;//by default floating point numbers are double!
+  //->So f or F is required
+  float ff = 23.23f;
+  float fff = 23.23F;
+  //float ffff = 23,23F;// . but not ,
+  
   /**
    * float is one of the 8 primitive types in Java.
   **/

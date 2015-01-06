@@ -10,6 +10,8 @@ public class _Int
   
   public static void main(String[] args)
   {
+    int literalInteger = 7;//literal integers are implicitly a int.
+    
     int base10 = 17;// = Decimal 17
     int base8 = 021;// = Octal 17
     int base16 = 0x00000011;// Hexadecimal 17

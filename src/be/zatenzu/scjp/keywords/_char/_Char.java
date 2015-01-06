@@ -26,7 +26,24 @@ public class _Char
     /**
      * char can be created from numeric
      */
+    // /!\literal integers are implicitly a int
     char a = 65;
+    char fromInt = 65535;
+    char fromIntt = (char)65536; //> 65535  -> casting
+  //possible loss of precision
+    
+    /**
+     * Or negative numeric
+     */
+    //stupid but legal with casting!
+    //possible loss of precision
+    char charFromNegative = (char) -98;
+    
+    //int or smaller expression always resulting in an int.
+    //char addition =  a + a;//
+    //char addition = (char) a + a;//
+    char addition = (char) (a + a);//
+    
     /**
      * char can be created from a single character
      */

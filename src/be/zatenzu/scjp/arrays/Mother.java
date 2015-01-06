@@ -1,5 +1,5 @@
 // $Id$
-package be.zatenzu.scjp.casting;
+package be.zatenzu.scjp.arrays;
 
 public class Mother
 {

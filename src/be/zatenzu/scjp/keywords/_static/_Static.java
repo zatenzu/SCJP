@@ -9,6 +9,7 @@ public class _Static
 {
   static{
     //my static bloc of code
+    int myStaticVarFromStaticBlock = 3;
   }
   
   public int myInt;
@@ -34,7 +35,7 @@ public class _Static
   
   public static void main(String[] args)
   {
-    System.out.println(myInt);//myInt is not static and we are in a static method.
+//    System.out.println(myInt);//myInt is not static and we are in a static method.
     
     System.out.println(_Static.myVar); //no instance is required to access to myVar
     
@@ -55,6 +56,9 @@ public class _Static
     new _Static.MyStaticNestedClass();
     //new instance of inner class
     s.new MyInnerClass();
+    
+    //block variable exists until the end of the block code, static or not!
+//    System.out.println(myStaticVarFromStaticBlock);
   }
   
   public void myMethodA(){};
