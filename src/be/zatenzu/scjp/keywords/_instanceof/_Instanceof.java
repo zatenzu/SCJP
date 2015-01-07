@@ -38,5 +38,19 @@ public class _Instanceof
     if(list instanceof String){
       System.out.println("Yes, it's a String!");
     }
+    
+    // instanceof can be used with null
+    if(null instanceof Object){System.out.println("null");}
+    //-> always false
+    
+    String s = ";";
+//    if(s instanceof Exception){}//Compilator error
+    
+    int[] tab = {1,2,3};
+    if(tab instanceof Object){System.out.println("Arrays are Object!");}
+    
+    /**
+     * Resume table at page 298
+     */
   }
 }
