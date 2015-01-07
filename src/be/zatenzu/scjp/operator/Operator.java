@@ -84,6 +84,21 @@ public class Operator
      System.out.println(true ^ false);//true
      System.out.println(false ^ true);//true
      System.out.println(false ^ false);//false
+     
+     //logical operator !
+     if(false && false || true){
+       System.out.println("?");
+     }
+     if( (false && false) || true){
+       System.out.println("??");
+     }
+     if(false && false | true){
+       System.out.println("???");
+     }
+     if( (false && false) | true){
+       System.out.println("????");
+     }
+     //| operator is evaluated first!!!
   }
   
   public static boolean theTruth(){
