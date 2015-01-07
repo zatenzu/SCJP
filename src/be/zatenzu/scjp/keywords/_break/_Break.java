@@ -35,8 +35,17 @@ public class _Break
         System.out.println("Take 1 break!");
       case 2:
         System.out.println("Take 2 break!");
+      default:
+        System.out.println("Take default break!");
     }
   
+    switch(j){
+      case 0:{System.out.println("Take 0 break!");break;}//inside the braces
+      case 1:{System.out.println("Take 1 break!");}break;//outside the braces
+      case 2:{System.out.println("Take 2 break!");break;}
+      default:{System.out.println("Take default break!");break;}
+    }    
+    
   //loop statements
   ////for, while and do while
   System.out.println("For loop with break");
