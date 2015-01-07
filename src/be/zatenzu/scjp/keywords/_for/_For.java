@@ -43,6 +43,9 @@ public class _For
       System.out.print("\n");
    }
     
+    /** You can have only one boolean expression! **/
+//    for(int i = 0; i < 2, i > 10; i++){}//forbidden
+    
     /**
      * Special for loop
      */
@@ -60,10 +63,15 @@ public class _For
     }
     ==> because there is no boolean expression or the boolean expression will be never true
     */
-    
+    //legal
+    int gg = 3;
+    for(;gg < 10;){
+      gg++;
+    }
     
     /**
      * Second for loop type: for each or enhanced for statement
+     * for(declaration : expression)
      */
     //For each loop is used to iterate a Iterable or an array.
     List<String> strings = new ArrayList<String>();
