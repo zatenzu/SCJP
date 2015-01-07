@@ -33,8 +33,10 @@ public class _Long
     /**
      * Wrapper class is Long.
      */
-    long wrapper = new Long(1l);
-    
+    Long wrapper = new Long(1l);
+    wrapper = 1L;
+//    wrapper = 1;// Frobbiden requiered L or l!!!!
+    long lon = 1;//OK
     /**
      *  /!\ Java 8 -> Can be use for unsigned 64-bit integer
      *  See java 8.
