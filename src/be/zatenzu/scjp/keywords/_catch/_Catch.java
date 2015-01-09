@@ -1,8 +1,6 @@
 // $Id$
 package be.zatenzu.scjp.keywords._catch;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class _Catch
 {
@@ -24,5 +22,7 @@ public class _Catch
     catch(MotherException ex){}
 //    catch(SubClassException fex){}//Forbidden, compiler error!
     //SubClassException already catch by the MothException catch block
+    
+    //=> if you add catch block with exception that could be never thrown -> Compilator error 
   }
 }
