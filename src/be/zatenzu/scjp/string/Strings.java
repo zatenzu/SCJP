@@ -84,6 +84,39 @@ public class Strings
     /** public String trim() **/
     System.out.println("  a z e r t y  \n \r \t".trim());//azerty
     
+    /** public String[] split(String regex) **/
+    String[] stringArray = "a2*54z*aea*zr*54*".split("\\*");
+    for(String s : stringArray){
+      System.out.println(s);
+    }
+    //see Regex package
     
+    
+    /** Format **/
+//    System.out.printf("String to format", args);
+    //%[arg_index$][flag][width][.precision]conversion char
+    //arg_index = position of the argument in the string
+    // Flags:
+    //  - = Left justitfy this argument
+    //  + = Include a sign with argument
+    //  0 = Pad this argument with zero
+    //  , = Use local specific grouping separators
+    //  ( = Enclose negative numbers in ()
+    // Width = Minimum number of char to print
+    // precision = floating point precision
+    // conversion:
+    //    b = boolean
+    //    c = char
+    //    d = integer
+    //    f = floating point
+    //    s = string
+    
+    System.out.printf("%1$b | %2$c | %3$d | %4$f | %5$s", true, '#', -6, 34.4, "String");
+    System.out.println("\n");
+    //true | # | -6 | 34,400000 | String
+    System.out.printf("%1$b | %2$c | %3$+(d | %4$+1f | %5$s", true, '#', -6, 34.4, "String");
+    System.out.println("\n");
+    //=> if error IllegalFormatConversionException
+    //TODO: I don't understand :'(
   }
 }
