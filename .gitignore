@@ -48,3 +48,13 @@ target/be/zatenzu/scjp/accessmodifier/_default/conclusion.txt
 target/be/zatenzu/scjp/accessmodifier/_protected/conslusion.txt
 target/be/zatenzu/scjp/overloading/OverloaddingRules.txt
 *.prefs
+*.iml
+*.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/workspace.xml
