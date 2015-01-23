@@ -82,7 +82,10 @@ public class Strings
     System.out.println(mainString.toUpperCase());//AZERTY
     
     /** public String trim() **/
-    System.out.println("  a z e r t y  \n \r \t".trim());//azerty
+    // /!\ Only leading and trailing whitespaces !
+    System.out.println("  a z e r t y  \n \r \t".trim());//a z e r t y
+    System.out.println("  a z e \n r t y  \n \r \t".trim());//a z e
+    //rty
     
     /** public String[] split(String regex) **/
     String[] stringArray = "a2*54z*aea*zr*54*".split("\\*");

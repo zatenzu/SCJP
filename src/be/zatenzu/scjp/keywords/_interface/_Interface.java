@@ -12,7 +12,7 @@ package be.zatenzu.scjp.keywords._interface;
  * Interface cannot implement interface
  * private or protected interface is forbidden, interface is public or default package
  */
-public /** abstract (implicit) **/ interface _Interface extends Interface1, Interface2
+public /** abstract (implicit) **/ interface _Interface
 {
   /**  interface variables are always constants so public static final are implicit!!**/
   public static final int MY_CONST = 1;
