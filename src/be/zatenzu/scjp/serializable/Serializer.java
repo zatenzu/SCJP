@@ -14,6 +14,8 @@ import be.zatenzu.scjp.serializable.WeaponImpl.WeaponType;
 
 public class Serializer implements Serializable
 {
+  //TODO: Serializable with inner class!
+  
   /** See transient keyword **/
   
   /** RULES **/
