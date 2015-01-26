@@ -5,8 +5,26 @@ public class Strings
 {
   int i;
   
+  class MyInnerClass{
+    int myInnerVar = i;
+
+    @Override
+    public int hashCode()
+    {
+      return 1;
+    }
+    
+  }
+  
   public static void main(String[] args)
   {
+    //default toString method -> package.Class@XXXX (XXXX = hashCode())
+    System.out.println("Default to String:" + new Object());
+    
+    //Inner class package.Class.InnerClass@XXX (xxxx = hashCode of innerclass)
+    System.out.println("Default to String:" + new Strings().new MyInnerClass());
+    
+    
     String myString  = "abc";//better be cause 1 object
     myString = new String("abc");
     //Create 1 String instance, give the instance to the constructor
