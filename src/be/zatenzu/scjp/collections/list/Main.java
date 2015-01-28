@@ -3,6 +3,7 @@ package be.zatenzu.scjp.collections.list;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Main
 {
@@ -38,6 +39,12 @@ public class Main
     //based on equals method
     // return -1 if !found
     System.out.println(myList.indexOf(new MyClass("Second")));
+
+    //-  lastIndexOf(Object o)
+    // return the index of the last occurence object
+    //based on equals method
+    // return -1 if !found
+    System.out.println(myList.lastIndexOf(new MyClass("Second")));
     
     // conntains(Object o)
     //return true if list contains the object
@@ -65,5 +72,11 @@ public class Main
     mySecondList.add(null);
     System.out.println("isEmpty:" + mySecondList.isEmpty());//false
     //only null element != empty!!!
+
+    //toArray
+    MyClass[] myClassArray = new MyClass[2];
+    MyClass[] myClassArray2 = myList.toArray(myClassArray);
+    MyClass[] myClassArray3 = (MyClass[])myList.toArray();
+   //Casting is requiered because return Object[]
   }
 }
