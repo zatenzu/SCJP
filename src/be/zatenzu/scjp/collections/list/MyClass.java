@@ -14,5 +14,5 @@ public class MyClass
   {
     // TODO Auto-generated method stub
     return s;
-  } 
+  }
 }
