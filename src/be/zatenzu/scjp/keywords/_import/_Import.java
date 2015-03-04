@@ -6,7 +6,7 @@ import java.lang.*; // -> useless
 import java.awt.color.ColorSpace; //import 1 class
 import java.awt.color.*;//import package content
 import static java.lang.System.*; 
-/** You don't nee to import classes who are in the same package!**/
+/** You don't need to import classes who are in the same package!**/
 import be.zatenzu.scjp.keywords._import.DontNeedToImportClass; //-> useless
 
 public class _Import
