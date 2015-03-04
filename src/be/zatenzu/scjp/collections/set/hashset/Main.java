@@ -21,5 +21,7 @@ public class Main
     
     
     // /!\ REDEFINE HASHCODE() !!!!
+    
+    //For Set list with enum element, it's not useful to redifine equals and hashcode
   }
 }

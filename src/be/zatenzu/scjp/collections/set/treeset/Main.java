@@ -10,6 +10,6 @@ public class Main
     //ordered and sorted set!!
     TreeSet<MyClass> ts = new TreeSet<MyClass>();
     
-    
+    //nothing new, see mother interfaces
   }
 }

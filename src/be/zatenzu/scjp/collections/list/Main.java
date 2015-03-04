@@ -2,6 +2,7 @@
 package be.zatenzu.scjp.collections.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -76,7 +77,33 @@ public class Main
     //toArray
     MyClass[] myClassArray = new MyClass[2];
     MyClass[] myClassArray2 = myList.toArray(myClassArray);
-    MyClass[] myClassArray3 = (MyClass[])myList.toArray();
+//    MyClass[] myClassArray3 = (MyClass[])myList.toArray();
    //Casting is requiered because return Object[]
+    
+    //list iterator
+    //return an iterator
+    System.out.println("ICI");
+    myList.add(0, new MyClass("First"));
+    myList.add(1, new MyClass("Second"));
+    myList.add(2, new MyClass("Thrid"));
+    for (Iterator<MyClass> flavoursIter = myList.listIterator(); flavoursIter.hasNext();){
+      System.out.println(flavoursIter.next());
+    }
+    
+    //list iterator(int i)
+    //return an iterator starting at i
+    for (Iterator<MyClass> flavoursIter = myList.listIterator(1); flavoursIter.hasNext();){
+      System.out.println(flavoursIter.next());
+    }
+    
+    // subList(int start, int end)
+    //return a sub list starting at start (inclusive) to end exclusive.
+    //this sublist is linked to the initial list. If you modify this sublist, the initial list will be too and vice versa.
+    System.out.println("===============");
+    List<MyClass> mcList = myList.subList(1, 2);
+    for(MyClass mc : mcList){
+      System.out.println(mc);
+    }
+    // if start and end are =, than return a empty list.
   }
 }

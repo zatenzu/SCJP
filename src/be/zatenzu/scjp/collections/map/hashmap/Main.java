@@ -16,10 +16,7 @@ public class Main
     
     //can add null values
     hm.put(new MyClass("Null value1"), null);
-    hm.put(new MyClass("Null value2"), null);
+    hm.put(new MyClass("Null value2"), "Null value2");
     System.out.println(hm.size());
-    
-    
-    //unique key is based on hashCode not equals!!!!!
   }
 }
