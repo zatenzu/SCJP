@@ -44,9 +44,7 @@ Temporary Items
 *.class
 *.classpath
 *.project
-target/be/zatenzu/scjp/accessmodifier/_default/conclusion.txt
-target/be/zatenzu/scjp/accessmodifier/_protected/conslusion.txt
-target/be/zatenzu/scjp/overloading/OverloaddingRules.txt
+target
 *.prefs
 *.iml
 *.name
