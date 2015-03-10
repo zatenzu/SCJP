@@ -12,13 +12,7 @@ public class Main
   public static void main(String[] args)
   {
     /** new instance of static inner class **/
-//    OutClass.MyStaticNestedInnerClass myStaticNestedInnerClass = new OutClass().MyStaticNestedInnerClass();//????
-    
-    MyStaticInnerClass myStaticInnerClass = new MyStaticInnerClass();
-    
-  }
-  
-  public void method(){
+    OutClass.MyStaticNestedInnerClass myStaticNestedInnerClass = new OutClass.MyStaticNestedInnerClass();
     MyStaticInnerClass myStaticInnerClass = new MyStaticInnerClass();
   }
 
