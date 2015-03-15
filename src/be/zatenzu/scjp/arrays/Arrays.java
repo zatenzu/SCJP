@@ -42,6 +42,6 @@ public class Arrays
     SubClass[] subClassArray = new SubClass[2];
     
     motherArray = subClassArray;//ok, subclass is a sub class of mother
-    myInterfaceArray = subClassArray;//ok, subclas implements MyInterface
+    myInterfaceArray = subClassArray;//ok, subclass implements MyInterface
   }
 }
