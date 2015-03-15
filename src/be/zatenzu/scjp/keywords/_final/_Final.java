@@ -55,7 +55,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
    */
   
   /**
-   * Final method, the method cannot be overriden or hidden by subclasses.
+   * Final method, the method cannot be overriden or hidden(like override by with static methods) by subclasses.
    */
   @Override
   public void myMethod(int a)
