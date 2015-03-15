@@ -6,4 +6,6 @@ public class Mother
   protected Mother(int i){
     System.out.println("Mother constructor");
   }
+  
+  protected Mother(String a,  String b){};
 }
