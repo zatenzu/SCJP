@@ -13,6 +13,9 @@ public class SubClass extends Mother
   // -no-args
   // -have as first line super();
   
+  //if you define a constructor, the implicit
+  //default constructor disappears!
+  
   //compilator error because compilator want to insert super()
   //at the first line of this constructor but the default no-args Mother
   //constructor doesn't exist and he cannot add it because there is already
