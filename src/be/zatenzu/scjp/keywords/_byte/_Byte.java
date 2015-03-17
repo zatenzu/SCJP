@@ -26,16 +26,28 @@ public class _Byte
     /**
      * Wrapper class is Byte.
      */
-    byte wrapper = new Byte((byte) -128);
+    Byte wrapper = new Byte((byte) -128);
+//    Byte wrapper2 = new Byte(127);//casting required
     
   //numbers are always implicitly int
     byte bb = 8;
     //but
+    //from int
     int b = 2;
     byte b2 = (byte)b;//need casting
     
+    //from char
+    char c = 2;
+    b2 = (byte)c;//need casting
+    
+    //from long
+    long l = 3;
+    b2 = (byte)l;//need casting
+    
     byte bbb = 127;
-    //byte bbbb = 128;//too big
+//    byte bbbb = 128;//too big, compilation error
+    //but
+    byte bbbb = (byte)130;//-126 (change the sign bit and put all others to 0)
     
     /**
      * From expression

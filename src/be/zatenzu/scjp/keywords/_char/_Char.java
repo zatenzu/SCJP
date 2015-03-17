@@ -53,10 +53,19 @@ public class _Char
      */
     char aaa = '\u0041';
     
+    //from hexadecimal value
+    char aaaa = 0xFFFF;//655535
+    
+//    char aaaaa = 0xFFFFFF;//too big but
+    char aaaaa = (char)0x010019;//too big but with casting it's ok
+    System.out.println("aaaaa" + aaaaa);
+    
     /**
      * char wrapper class is Character
      */
     char wrapper = new Character('\u0041');
+    
+    char wrapper2 = new Character((char)1);
     
     /**
      * char is compatible with int
