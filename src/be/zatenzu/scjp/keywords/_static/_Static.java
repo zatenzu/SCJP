@@ -24,7 +24,7 @@ public class _Static
    * This attribute is unique in the whole Java Virtual Machine. All _Static instances use the same attribute!
    * static keyword must be before variable type.
    */
-  protected static int myVar;
+  protected static Integer myVar;
   
   //static keyword must be before variable type.
   //protected int static myVar2; -> forbidden
@@ -36,7 +36,7 @@ public class _Static
   public static void main(String[] args)
   {
 //    System.out.println(myInt);//myInt is not static and we are in a static method.
-    
+    System.out.println(myVar);//static var can be used whitout initialisation, no NPE, no compilation faild, just print null
     System.out.println(_Static.myVar); //no instance is required to access to myVar
     
     //class variable can be refrered from an instance. 
