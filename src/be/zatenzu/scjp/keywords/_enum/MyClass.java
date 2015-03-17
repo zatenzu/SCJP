@@ -23,7 +23,7 @@ public class MyClass
 }
 
 //Can declare enum outside a class, in the same file or not.
-//public is not allowed for for enum who is not in its own file 
+//public is not allowed for enum who is not in its own file 
 //public enum MyEnumOutsideTheClass{
 enum MyEnumOutsideTheClass{
   A,B,C
