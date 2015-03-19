@@ -30,7 +30,9 @@ public class _Int
     /**
      * Wrapper class is Integer.
      */
-    int wrapper = new Integer(1);
+    Integer wrapper = new Integer(1);//int
+    wrapper = new Integer("1");//string
+    
     
     /**
      *  /!\ Java 8 -> Can be use for unsigned 32-bit integer
@@ -43,6 +45,8 @@ public class _Int
     
     /** int is compatiable with float **/
     float f = a;
-    a = (int)f;
+    f = 23.24F;
+    a = (int)f;//keep only 23
+    System.out.println(a);
   }
 }

@@ -33,7 +33,10 @@ public class _Long
     /**
      * Wrapper class is Long.
      */
-    Long wrapper = new Long(1l);
+    Long wrapper = new Long(1l);//long
+    new Long("1");//string
+//    new Long("1L");//NumberFOrmatException
+    
     wrapper = 1L;
 //    wrapper = 1;// Frobbiden requiered L or l!!!!
     long lon = 1;//OK

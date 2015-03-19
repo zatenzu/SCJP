@@ -48,7 +48,10 @@ public class _Boolean
      */
     
     //The wrapper class is Boolean
-    boolean myWrapper = new Boolean(true);
-    
+    Boolean myWrapper = new Boolean(true);//boolean
+    myWrapper = new Boolean("true");//String
+    System.out.println(new Boolean("TRUE"));//true
+    System.out.println(new Boolean("True"));//true
+    System.out.println(new Boolean("TrUe"));//true
   }
 }

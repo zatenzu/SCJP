@@ -25,6 +25,8 @@ public class _Short
     /**
      * Wrapper class is Short.
      */
-    short wrapper = new Short((short)1); //casting is required because default numeric value is integer
+    Short wrapper = new Short((short)1); //casting is required because default numeric value is integer
+    wrapper = new Short((short)1);//short
+    wrapper = new Short("1");//string
   }
 }

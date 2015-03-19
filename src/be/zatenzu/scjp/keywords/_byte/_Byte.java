@@ -28,6 +28,8 @@ public class _Byte
      */
     Byte wrapper = new Byte((byte) -128);
 //    Byte wrapper2 = new Byte(127);//casting required
+    wrapper = new Byte((byte)1);//byte
+    wrapper = new Byte("1");//String
     
   //numbers are always implicitly int
     byte bb = 8;
