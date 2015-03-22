@@ -1,10 +1,10 @@
 // $Id$
-package be.zatenzu.scjp.overloading.a;
+package be.zatenzu.scjp.polymorphism.overloading.a;
 
 import java.io.FileNotFoundException;
 
-import be.zatenzu.scjp.overloading.b.Mother;
-import be.zatenzu.scjp.overloading.b.SubClass;
+import be.zatenzu.scjp.polymorphism.overloading.b.Mother;
+import be.zatenzu.scjp.polymorphism.overloading.b.SubClass;
 
 public class MyClass
 {

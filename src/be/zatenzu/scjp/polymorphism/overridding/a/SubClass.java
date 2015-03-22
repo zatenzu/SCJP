@@ -1,5 +1,5 @@
 // $Id$
-package be.zatenzu.scjp.overridding.a;
+package be.zatenzu.scjp.polymorphism.overridding.a;
 
 public class SubClass extends Mother
 {
