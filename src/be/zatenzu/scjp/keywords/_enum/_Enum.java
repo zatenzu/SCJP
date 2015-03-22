@@ -1,8 +1,10 @@
 // $Id$
 package be.zatenzu.scjp.keywords._enum;
 
+import java.io.Serializable;
+
 //Public or default package access modifier
-public enum _Enum
+public enum _Enum implements Serializable//can implements interface
 {
   /**
    * enum extends implicitly java.lang.Enum!

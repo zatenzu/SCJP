@@ -48,14 +48,15 @@ public class MyClass
     myMethod(s);
     myMethod(l);
     myMethod(f);
-    /*
+    
+    /**
     ==> If the JVM doesn't find the method with exactly the same primitive type
     the JVM use the smallest correspondent primitive type.
     The smallest primitive type but bigger than the original argument type.
     --> It's called Widening!
-    */
+    **/
 
-    //Wrapper argument -> primitive method parameter    
+    //Wrapper argument -> primitive method parameter
     Byte bbb = 0;
     Short ss = 0;
     Long ll = 0L;
@@ -95,7 +96,7 @@ public class MyClass
     //primtive arguments -> primitives parameters
     byte b1 = (byte)0;
     byte b2 = (byte)0;
-    myMethod(b1,b2);
+    myMethod(b1,b2);//int,int or byte... ?
     //JVM choses widening
     
     //Wrapper arguments -> primitives parameters

@@ -3,6 +3,8 @@ package be.zatenzu.scjp.identifiers;
 
 public class Identifier
 {
+  /** Identifier rules are the same for class, methods and var. **/
+ 
   //identifiers could be composed by all Unicode and currency characters, plus underscore.
   /** legal **/
   public String a;
@@ -48,8 +50,8 @@ public class Identifier
   // - must be public
   
   //Listener
-  // add/removeActionListener
+  // add/removeAListener(AListener listener)
   // - must start with add or remove
-  // - must end with Listener
+  // - must end with ListenerA
   // - must take 1 argument type of Listener
 }

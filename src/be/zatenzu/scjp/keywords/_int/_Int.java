@@ -32,6 +32,8 @@ public class _Int
      */
     Integer wrapper = new Integer(1);//int
     wrapper = new Integer("1");//string
+//    wrapper = new Integer("0xFFFF");//NFE!
+    new Integer(0xFFFF);
     
     
     /**

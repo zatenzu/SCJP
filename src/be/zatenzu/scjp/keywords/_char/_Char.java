@@ -52,6 +52,7 @@ public class _Char
      * char can be created from unicode escape sequence
      */
     char aaa = '\u0041';
+//    aaa = '\uFFFFF';//too big
     
     //from hexadecimal value
     char aaaa = 0xFFFF;//655535
@@ -63,7 +64,7 @@ public class _Char
     /**
      * char wrapper class is Character
      */
-    new Character('\u0041');
+    new Character('\uFFFF');
     
     new Character((char)1);
     

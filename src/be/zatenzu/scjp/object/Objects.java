@@ -16,7 +16,7 @@ public class Objects
   public static void main(String[] args)
   {
     /** Check the overridding rules for these methods!!! --> Big dumb trap! **/
-    /** Exemple: String toString(){} -> it's not overrinding !
+    /** Exemple: String toString(){} -> it's not overriding !
       /*************************************/
      /**  public String toString()       **/
     /*************************************/

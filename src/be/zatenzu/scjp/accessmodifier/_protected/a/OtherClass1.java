@@ -12,5 +12,6 @@ public class OtherClass1
     System.out.print(c.x);//ok I'm in the same package as x
     System.out.print(c1.x);//ok I'm in the same package as x
     System.out.print(c2.x);//ok I'm in the same package as x
+//    System.out.print(x);
   }
 }

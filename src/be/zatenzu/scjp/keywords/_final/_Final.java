@@ -11,7 +11,7 @@ import java.util.List;
  */
 public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
 {
-  //Cannot extends a static class. If you do that -> compiler error !!!
+  //Cannot extends a final class. If you do that -> compiler error !!!
   
   //A instance variable who isn't defined at the declaration point is called 'blank final' variable
   final boolean myVar;

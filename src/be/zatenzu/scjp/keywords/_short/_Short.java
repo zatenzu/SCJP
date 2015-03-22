@@ -22,11 +22,16 @@ public class _Short
      */
     System.out.println("Initial value is " + initialValue);
     
+    short s1 = '\u0000';
+    s1 = 'A';
+    s1 = (short)0xFFFF;//need casting from hexa :/
+    
     /**
      * Wrapper class is Short.
      */
     Short wrapper = new Short((short)1); //casting is required because default numeric value is integer
     wrapper = new Short((short)1);//short
     wrapper = new Short("1");//string
+    wrapper = new Short((short)0xFFFF);//hexa
   }
 }

@@ -30,7 +30,7 @@ public class Wrapper
     myIntWrapper += 2;
     System.out.println(myIntWrapperBis);
     
-    //other exemple
+    //other exemples
     myIntWrapper = new Integer(1234);
     myIntWrapperBis = myIntWrapper;
     System.out.println(myIntWrapper == myIntWrapperBis);//true, it's the same object
@@ -91,6 +91,7 @@ public class Wrapper
 ////    Long has valueOf(String), valueOf(Long long) and valueOf(String s,int radix)
     Long.valueOf(2L);
     Long.valueOf("2");//valueOf("2L") OMG!//Forbidden !!!! --> NumberFormatException
+    new Float("2F");
     Long.valueOf("01", 2);
     
 ////    Short has valueOf(String), valueOf(Short short) and valueOf(String s,int radix)

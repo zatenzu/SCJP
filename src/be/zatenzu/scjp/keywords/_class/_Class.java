@@ -1,6 +1,14 @@
 // $Id$
 package be.zatenzu.scjp.keywords._class;
 
+/**
+ * 
+ * Only one public class per file
+ * The file name must match with the public class name
+ * A file can content more than 1 non-public class
+ * A file with no public class can have a name different than class name
+ *
+ */
 public class _Class
 {
   /**
@@ -15,13 +23,16 @@ public class _Class
    * - If a file contains no public class, the name file can be different
    */
   
-  /**
-   * class is a special attribut on a class.
-   * On a T Class, get Class<T> instance
-   */
-  Class<Object> c = Object.class;
   public static void main(String[] args)
   {
+    /**
+     * class is a special attribut on a class.
+     * On a T Class, get Class<T> instance
+     */
+    Class<Object> c = Object.class;
+    
+    
+    
     System.out.println("Hello");
   }
 }

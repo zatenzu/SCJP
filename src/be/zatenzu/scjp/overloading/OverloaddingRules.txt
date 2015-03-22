@@ -1,5 +1,15 @@
+- Must have the same name
 - Must change the argument list
 - Can change the return type
 - Can change access modifier
 - Can declare new or broader checked exceptions
 - A method can be overloaded in the same class or in a subclass
+===============================================================
+- varType > instanceType (compilation time, not runtime)
+- widening > boxing
+- widening > var args
+- boxing > var args
+- widening + boxing = error
+- widening + var args = ok
+- boxing + var args = ok
+- boxing + IS-A = ok

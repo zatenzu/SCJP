@@ -42,7 +42,7 @@ public class SubClass extends Mother
   public void m() throws RuntimeException{}
   /** cannot be a Super class of Exception**/
 //  public void n() throws Throwable{}
-  public void o(){};
+  public void o(){};//override ok
   //===
   
   public void myMethodToOverridde(){

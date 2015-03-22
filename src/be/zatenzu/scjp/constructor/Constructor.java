@@ -14,6 +14,11 @@ public class Constructor
   //Constructor must have the same name as the Class
   public Constructor(){}
   //if no constructor is defined in the class, this default constructor is implicit!
+
+  //the auto-created(implicit default constructor) constructor will:
+  // -have the same access modifier than the class
+  // -no-args
+  // -have as first line super();ex Constructor(){super();}
   
   //can be protected
   protected Constructor(int i){}
