@@ -16,8 +16,11 @@ public class MyClass
   public void a(Mother m){
     System.out.println("Mother");
   }
-  public void a(SubClass m){
+  
+  //you can change the return type
+  public int a(SubClass m){
     System.out.println("SubClass");
+    return 0;
   }
   
   public static void main(String[] args)
@@ -128,7 +131,6 @@ public class MyClass
   /*************************************/    
     
   }
-  
   public static void myMethod(int i){System.out.println("INT");}
   public static void myMethod(long l){System.out.println("LONG");}
   public static void myMethod(double d){System.out.println("DOUBLE");}

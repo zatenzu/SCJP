@@ -5,44 +5,44 @@ public class SubClass extends Mother
 {
 
   //not overriding, argument type is different
-  public void a(String s){}
+  public void a(String s){System.out.println("a-SubClass");}
   
   //You cannot reduce the visibility with overridding (public -> private)
 //  private void a(String s){}; --> forbidden
 
   //The return type can be a subclass of the return type of the overridded method .
-  public String b(String s){return new String();} //->yes it's overridding
+  public String b(String s){System.out.println("b-SubClass");return new String();} //->yes it's overridding
   //  /!\ only for return type, not for parameters
 
   /** ok I'm the same package and it's a non final method**/
-  void c(){}
+  void c(){System.out.println("c-SubClass");}
 
   /** ok I'm a subclass and it's a non final method**/
-  protected void d(){}
+  protected void d(){System.out.println("d-SubClass");}
   
   /** I can't overridde e method because it's private **/
-  private void e(){}//-> It's a new method
+  private void e(){System.out.println("e-SubClass");}//-> It's a new method
   
   /** cannot be overridde because it's final **/
 //  public void f(){};//It's final
   
   /** cannot overridde a static method **/
-  public static void g(){}// -> It's a new method!
+  public static void g(){System.out.println("g-SubClass");}// -> It's a new method!
 
   //TODO exception
-  public void h(){}
-  public void i() throws NumberFormatException{}
-  public void j() throws RuntimeException{}
+  public void h(){System.out.println("h-SubClass");}
+  public void i() throws NumberFormatException{System.out.println("i-SubClass");}
+  public void j() throws RuntimeException{System.out.println("j-SubClass");}
   /** I' can't but why? (wating for chapter 5) **/
-//  public void k() throws Exception{}
+//  public void k() throws Exception{}//super type ?
   
   /** the same exception ok**/
-  public void l() throws Exception{}
-  /** A subclass of Exception, ok**/
-  public void m() throws RuntimeException{}
+  public void l() throws Exception{System.out.println("l-SubClass");}
+  /** A subclass of Exception, nok**/
+  public void m() throws RuntimeException{System.out.println("m-SubClass");}
   /** cannot be a Super class of Exception**/
 //  public void n() throws Throwable{}
-  public void o(){};//override ok
+  public void o(){System.out.println("o-SubClass");};//override ok
   //===
   
   public void myMethodToOverridde(){
@@ -59,7 +59,44 @@ public class SubClass extends Mother
     m.myMethodToOverridde();
     m2.myMethodToOverridde();
     m3.myMethodToOverridde();
-    //==> It's defined by the object type at runtime!!!!
+    //==> It's defined by the object instance type at runtime!!!!
+    System.out.println("============");
+    m2.a(new Object());
+    m2.b("");
+    m2.c();
+    m2.d();
+    m2.f();
+    m2.g();
+    m2.h();
+    m2.i();
+    m2.j();
+    try
+    {
+      m2.l();
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    try
+    {
+      m2.n();
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    try
+    {
+      m2.o();
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
   
 }
