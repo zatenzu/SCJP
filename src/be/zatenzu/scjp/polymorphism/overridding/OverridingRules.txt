@@ -1,0 +1,7 @@
+- Must have the same name
+- Can return a sub type of the returned type
+- Cannot reduce the visibility
+- If the method is final, It's not overriding
+- If the method isn't visible, It's not overriding
+- If the method is static, It's not overriding
+//TODO exception page 108
