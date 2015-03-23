@@ -3,7 +3,7 @@ package be.zatenzu.scjp.keywords._enum;
 
 import java.io.Serializable;
 
-//Public or default package access modifier
+//Public or default package access modifier(if the enum isn't in a class)
 public enum _Enum implements Serializable//can implements interface
 {
   /**
@@ -15,7 +15,7 @@ public enum _Enum implements Serializable//can implements interface
   /**
    * enum is a class so you can have constructors and methods.
    */
-  _Enum(){
+  /* private only implicit*/_Enum(){
     
   }
   public int getInt(){

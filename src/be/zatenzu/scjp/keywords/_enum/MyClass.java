@@ -4,6 +4,7 @@ package be.zatenzu.scjp.keywords._enum;
 public class MyClass
 {
   //Can declare enum inside a class
+  //it can be protected or private
   enum MyEnumInsideTheClass{
     A,B,C;// ; is not required
   }
