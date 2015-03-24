@@ -1,4 +1,5 @@
 - Must have the same name
+- Must have the same argument list
 - Can return a sub type of the returned type
 - Cannot reduce the visibility
 - If the method is final, It's not overriding

@@ -21,7 +21,7 @@ public class SubClass extends Mother
     
     //runtime error ClassCastException
     Mother mother2 = new Mother();
-    SubClass subClass2 = (SubClass)mother;
+    SubClass subClass2 = (SubClass)mother2;
     
     //Compilator error, SubClass never be a String
 //    String s = (String)subClass2;
