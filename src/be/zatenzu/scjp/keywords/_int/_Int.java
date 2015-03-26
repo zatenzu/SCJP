@@ -1,6 +1,8 @@
 // $Id$
 package be.zatenzu.scjp.keywords._int;
 
+import be.zatenzu.scjp.keywords._interface._Interface;
+
 public class _Int
 {
   /**

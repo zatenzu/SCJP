@@ -10,6 +10,7 @@ public class Arrays
   int[][] tabC;//two dimensional array
   int tabD[][];//two dimensional array
   int[][][] tabE;//tree dimensional array
+  int[][] tabZ[];//tree dimensional array
   static float[] myTab = new float[5];
 //  int[5] tabF = new int[5]; Never initialize with size at the variable type
   
@@ -24,6 +25,7 @@ public class Arrays
   int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
   
   int i = new int[]{1,2,3}[1];
+//  int[] ii = new int[1]{1,2,3};cannot specify the size two times
   
   public static void main(String[] args)
   {

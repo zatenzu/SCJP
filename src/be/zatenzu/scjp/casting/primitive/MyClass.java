@@ -5,6 +5,8 @@ public class MyClass
 {
   public static void main(String[] args)
   {
+    String azerty;
+    System.out.println(azerty);
     /** implicit casting **/
     //We put a smaller value in a bigger or the same container.
     int i = 1;

@@ -6,10 +6,11 @@ package be.zatenzu.scjp.keywords._class;
  * Only one public class per file
  * The file name must match with the public class name
  * A file can content more than 1 non-public class
- * A file with no public class can have a name different than class name
+ * A file with no public class can have a name different from class name
+ * Only public default, abstract and final!
  *
  */
-public class _Class
+class _Class
 {
   /**
    * class keyword is used to declare class or inner class.

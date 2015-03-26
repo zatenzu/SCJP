@@ -5,7 +5,7 @@ public class Wrapper
 {
   public static void main(String[] args)
   { 
-    //primitive -> Primitive(Wrapper class) -> Primitive(primitive) ou Primitive("primitive")
+    //primitive -> Primitive(Wrapper class) -> Primitive(primitive) or Primitive("primitive")
     //exemple:
     int i = 0;//primitive
     Integer wrapper;//Primitive (Wrapper)
@@ -15,7 +15,9 @@ public class Wrapper
     //exception -> Char doesn't have String constructor!
 //    Character c = new Character("String");
     //exception Double has a float constructor
+    //exception Float has a double constructor
     Double d = new Double(34.0f);
+    Float f = new Float(3.3);
     
     //=> No default constructor
 //    Integer g = new Integer();//doesn't exist!!
@@ -39,7 +41,7 @@ public class Wrapper
     //because myIntWrapperBis ++ --> unwrap it, increment it and rewrap it (new instance).
     System.out.println("=======   =======");
     
-    //equals() method compare the primitive value of the wrapper object
+    /* equals() method compare the primitive value of the wrapper object */
     
     /** unwrapping a null wrapper object never return the default value of the primitive!!! **/
     
@@ -64,16 +66,16 @@ public class Wrapper
     ////radix parameter define the 'base' 2 = binary 010101
     
 ////    Boolean has valueOf(String s) and valueOf(Boolean b)
-    Boolean.valueOf("true");
-    Boolean.valueOf(false);
+    Boolean bWrapper = Boolean.valueOf("true");
+    bWrapper = Boolean.valueOf(false);
     
 ////    Byte has valueOf(Byte byte),valueOf(String s) and valueOf(String s, int radix)
-    Byte.valueOf((byte)2);
-    Byte.valueOf("2");
-    Byte.valueOf("01", 2);
+    Byte byteWrapper = Byte.valueOf((byte)2);
+    byteWrapper = Byte.valueOf("2");
+    byteWrapper = Byte.valueOf("01", 2);
     
 ////    Character has valueOf(char c)
-    Character.valueOf('c');
+    Character charCharacter = Character.valueOf('c');
 
 ////    Double has valueOf(double d) and valueOf(String s)
     Double.valueOf(34.34);

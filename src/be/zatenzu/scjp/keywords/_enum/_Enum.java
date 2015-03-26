@@ -15,7 +15,7 @@ public enum _Enum implements Serializable//can implements interface
   /**
    * enum is a class so you can have constructors and methods.
    */
-  /* private only implicit*/_Enum(){
+  /* private only, implicit*/_Enum(){
     
   }
   public int getInt(){

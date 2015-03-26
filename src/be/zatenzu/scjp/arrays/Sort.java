@@ -11,7 +11,7 @@ public class Sort
     //
     int[] myIntArray = new int[]{2,1,3};
     String[] sss = new String[1];
-//    java.util.Arrays.sort(myIntArray, new MyComp());//You cannot sort a primitive array with comparable!!!
+//    java.util.Arrays.sort(myIntArray, new MyComp());//You cannot sort a primitive array with comparator!!!
     
     //binarySearch(array, valueToSearch)
     //if found, return the index of the key

@@ -29,6 +29,7 @@ public class _Boolean
     boolean c = 0;
     boolean d = 1;
     boolean e = True;
+    boolean e = TRUE;
     boolean f = False;
     boolean g = y;
     boolean h = n;

@@ -14,7 +14,7 @@ public class SubClass extends Mother
   public String b(String s){System.out.println("b-SubClass");return new String();} //->yes it's overridding
   //  /!\ only for return type, not for parameters
 
-  /** ok I'm the same package and it's a non final method**/
+  /** ok I'm the same package and it's a non final method **/
   void c(){System.out.println("c-SubClass");}
 
   /** ok I'm a subclass and it's a non final method**/
@@ -33,7 +33,7 @@ public class SubClass extends Mother
   public void h(){System.out.println("h-SubClass");}
   public void i() throws NumberFormatException{System.out.println("i-SubClass");}
   public void j() throws RuntimeException{System.out.println("j-SubClass");}
-  /** I' can't but why? (wating for chapter 5) **/
+  /** I' can't but why? (waiting for chapter 5) **/
 //  public void k() throws Exception{}//super type ?
   
   /** the same exception ok**/

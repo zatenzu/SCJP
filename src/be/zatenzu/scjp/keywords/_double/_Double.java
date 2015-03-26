@@ -13,6 +13,7 @@ public class _Double
     double d = 23.23;//by default floating point numbers are double!
     double dd = 23.23D;//D is implicit
     double ddd = 23.23d;//d is implicit
+//    double ddddd = 23,23d;//not dot but comma dont compile
     
     /**
      * It use to declared a 64-bit floating point value.

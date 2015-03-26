@@ -15,6 +15,7 @@ package be.zatenzu.scjp.keywords._interface;
 public /** abstract (implicit) **/ interface _Interface
 {
   /**  interface variables are always constants so public static final are implicit!!**/
+  /** only public, static final, nothing else **/
   public static final int MY_CONST = 1;
   public static int MY_CONST_A = 1;
   public int MY_CONST_B = 1;
