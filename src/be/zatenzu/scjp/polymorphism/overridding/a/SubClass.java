@@ -1,11 +1,13 @@
 // $Id$
 package be.zatenzu.scjp.polymorphism.overridding.a;
 
+import java.io.IOException;
+
 public class SubClass extends Mother
 {
 
   //not overriding, argument type is different
-  public void a(String s){System.out.println("a-SubClass");}
+  public void a(SubClass s){System.out.println("a-SubClass");}
   
   //You cannot reduce the visibility with overridding (public -> private)
 //  private void a(String s){}; --> forbidden
@@ -33,16 +35,16 @@ public class SubClass extends Mother
   public void h(){System.out.println("h-SubClass");}
   public void i() throws NumberFormatException{System.out.println("i-SubClass");}
   public void j() throws RuntimeException{System.out.println("j-SubClass");}
-  /** I' can't but why? (waiting for chapter 5) **/
-//  public void k() throws Exception{}//super type ?
+//  public void k() throws Exception{};//super type of IllegalArgumentException
   
   /** the same exception ok**/
-  public void l() throws Exception{System.out.println("l-SubClass");}
-  /** A subclass of Exception, nok**/
-  public void m() throws RuntimeException{System.out.println("m-SubClass");}
+  public void l() throws Exception{System.out.println("l-SubClass");}//override ok
+  /** A subclass of Exception, ok**/
+  public void m() throws IOException{System.out.println("m-SubClass");}//override ok
   /** cannot be a Super class of Exception**/
-//  public void n() throws Throwable{}
-  public void o(){System.out.println("o-SubClass");};//override ok
+//  public void n() throws Exception{System.out.println("n-SubClass");}
+  public void o() throws Exception, RuntimeException{System.out.println("o-SubClass");}//override ok
+  public void p(){System.out.println("p-SubClass");}//??
   //===
   
   public void myMethodToOverridde(){
@@ -61,7 +63,7 @@ public class SubClass extends Mother
     m3.myMethodToOverridde();
     //==> It's defined by the object instance type at runtime!!!!
     System.out.println("============");
-    m2.a(new Object());
+    m2.a(new Mother());
     m2.b("");
     m2.c();
     m2.d();
@@ -81,6 +83,15 @@ public class SubClass extends Mother
     }
     try
     {
+      m2.m();
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    try
+    {
       m2.n();
     }
     catch (Exception e)
@@ -91,6 +102,15 @@ public class SubClass extends Mother
     try
     {
       m2.o();
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    try
+    {
+      m2.p();
     }
     catch (Exception e)
     {

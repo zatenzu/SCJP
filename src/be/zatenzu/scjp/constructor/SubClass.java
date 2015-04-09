@@ -25,7 +25,8 @@ public class SubClass extends Mother
   }
   
   public SubClass(){
-    this(1);//or super(1); must be the first line of the constructor body
+    this(Mother.getInt());//or super(1); must be the first line of the constructor body
+    //the getInt() must be static!
     System.out.println("SubClass constructor");
   }
 }

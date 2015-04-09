@@ -14,9 +14,7 @@ public class Wrapper
     
     //exception -> Char doesn't have String constructor!
 //    Character c = new Character("String");
-    //exception Double has a float constructor
     //exception Float has a double constructor
-    Double d = new Double(34.0f);
     Float f = new Float(3.3);
     
     //=> No default constructor
@@ -60,7 +58,7 @@ public class Wrapper
     // - they are Short or Integer from -128 to 127
     // ===> BIG TRAP!
     
-    /** Wrapper methods **/    
+    /** Wrapper methods **/
 
     //valueOf
     ////radix parameter define the 'base' 2 = binary 010101
@@ -167,6 +165,12 @@ public class Wrapper
     
     ////All numeric type have byte,double,float,int,long and shortValue() methods
     ////boolean and char has only primitiveValue() method
+    Integer integer22 = Integer.valueOf(1);
+    integer22 = Integer.valueOf("1");
+    integer22 = Integer.valueOf("1", 10);
+    int intint = Integer.parseInt("1");
+    System.out.println(Integer.toString(intint));
+    
     
     //parseXxx() and valueOf()
     //toString()

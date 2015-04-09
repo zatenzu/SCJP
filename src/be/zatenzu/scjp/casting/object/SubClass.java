@@ -1,6 +1,9 @@
 // $Id$
 package be.zatenzu.scjp.casting.object;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SubClass extends Mother
 {
   public static void main(String[] args)
@@ -32,4 +35,7 @@ public class SubClass extends Mother
     Mother mother3 = (Mother)subClass2;
     Mother mother4 = subClass2;//explicit casting isn't necessary for upcasting !!
   }
+  
+  public void test(List<String> s){};
+  public void test(ArrayList<Object> s){};
 }

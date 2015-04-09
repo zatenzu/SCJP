@@ -10,6 +10,7 @@ public class MyOtherClass
     
     //MyEnumInsideTheClass is unknown, must though over MyClass
 //    System.out.println(MyEnumInsideTheClass.A);
+    //System.out.println(new MyClass().MyEnumInsideTheClass.A);
     System.out.println(MyClass.MyEnumInsideTheClass.A);
     System.out.println(MyEnumOutsideTheClass.A);
     System.out.println(_Enum.A);

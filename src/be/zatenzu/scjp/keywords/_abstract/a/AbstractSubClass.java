@@ -1,5 +1,5 @@
 // $Id$
-package be.zatenzu.scjp.keywords._abstract;
+package be.zatenzu.scjp.keywords._abstract.a;
 
 public abstract class AbstractSubClass extends _Abstract
 {

@@ -3,6 +3,8 @@ package be.zatenzu.scjp.constructor;
 
 public class Mother
 {
+  public static int i = 3;
+  
   protected Mother(){
     System.out.println("Mother constructor");
   }
@@ -12,4 +14,8 @@ public class Mother
   }
   
   protected Mother(String a,  String b){};
+  
+  public static int getInt(){
+    return 3;
+  }
 }

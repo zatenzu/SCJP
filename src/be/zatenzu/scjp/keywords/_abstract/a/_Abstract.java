@@ -1,5 +1,5 @@
 // $Id$
-package be.zatenzu.scjp.keywords._abstract;
+package be.zatenzu.scjp.keywords._abstract.a;
 
 //public abstract final class -> stupid and forbidden
 // final cannot be extend and abstract is made to be extend
@@ -17,6 +17,9 @@ public abstract class _Abstract
   //abstract + static -> forbidden
 //  public abstract static void myMethod2();
   
+  //default package is allowed
+  abstract void myMethod2();
+  
   public static void main(String[] args)
   {
     /** abstract class cannot be instantiated **/
@@ -28,6 +31,12 @@ public abstract class _Abstract
       
       @Override
       public void myMethod()
+      {
+        // TODO Auto-generated method stub
+        
+      }
+      @Override
+      public void myMethod2()
       {
         // TODO Auto-generated method stub
         

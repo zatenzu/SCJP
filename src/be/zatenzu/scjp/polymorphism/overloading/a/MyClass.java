@@ -37,6 +37,14 @@ public class MyClass
     // ====> The reference type(NOT the object type) decide which overloaded method is invoke !!!!
     //It's decided at compiler time, not runtime
     
+    
+    /**
+    ==> If the JVM doesn't find the method with exactly the same primitive type
+    the JVM use the smallest correspondent primitive type.
+    The smallest primitive type but bigger than the original argument type.
+    --> It's called Widening!
+    **/
+    
       /*************************************/
      /** Overloading and primitive types **/
     /*************************************/
@@ -51,14 +59,8 @@ public class MyClass
     myMethod(s);
     myMethod(l);
     myMethod(f);
+    //widening
     
-    /**
-    ==> If the JVM doesn't find the method with exactly the same primitive type
-    the JVM use the smallest correspondent primitive type.
-    The smallest primitive type but bigger than the original argument type.
-    --> It's called Widening!
-    **/
-
     //Wrapper argument -> primitive method parameter
     Byte bbb = 0;
     Short ss = 0;
@@ -68,11 +70,8 @@ public class MyClass
     myMethod(ss);
     myMethod(ll);
     myMethod(ff);
-    /*
-    ==> Idem with Wrapper class!
-    ==> If the JVM doesn't find the method with exactly the same Wrapper type
-    the JVM use the smallest correspondent primitive type!
-     */
+    //Unboxing + Widening -> OK
+    //Widening with 
     
     //primitive argument -> wrapper method parameter
     short sssss = (short)1;
@@ -82,7 +81,6 @@ public class MyClass
     */
     
     //wrapper argument -> wrapper method parameter
-//    myMethodWrapper(bbb);//Forbidden!
 //    myMethodWrapper(ss);//Forbidden!
     myMethodWrapper(ll);
 //    myMethodWrapper(ff);//Forbidden!
@@ -111,9 +109,13 @@ public class MyClass
     
     /** Boxing vs var-args**/
     //primitive arguments -> wrapper parameters
-    myMethodWrapper(b1,b2);
+    myMethodWrapper((byte)0,(byte)0);
     //=>JVM choses Boxing
     /** Boxing wins! **/
+    
+    /** 2 params vs vargars **/
+    myMethodTest(0, 0);
+    /** 2 params **/
     
     /** Cannot do widening + boxing **/
 //    myMethodWrapper2(b1);//forbidden
@@ -128,7 +130,7 @@ public class MyClass
 
     /*************************************/
    /** See page 254 for rules          **/
-  /*************************************/    
+  /*************************************/
     
   }
   public static void myMethod(int i){System.out.println("INT");}
@@ -156,4 +158,7 @@ public class MyClass
   public static void myMethodWrapper3(int... args){System.out.println("Wrapper3 int...");}
   
   public static void myMethodObject(Object o){System.out.println("Object");}
+  
+  public static void myMethodTest(int x, int y){System.out.println("2 params");}
+  public static void myMethodTest(int... args){System.out.println("varargs");}
 }

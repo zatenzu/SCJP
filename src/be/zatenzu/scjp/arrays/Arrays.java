@@ -45,5 +45,12 @@ public class Arrays
     
     motherArray = subClassArray;//ok, subclass is a sub class of mother
     myInterfaceArray = subClassArray;//ok, subclass implements MyInterface
+    
+    //Doesn't work with primitives
+//    double[] intArray = new float[2];
+    
+    //Doesn't work with wrapper
+//  Byte[] byteArray = new byte[2];
+//  int[] byteArray = new Integer[2];
   }
 }

@@ -5,8 +5,6 @@ public class MyClass
 {
   public static void main(String[] args)
   {
-    String azerty;
-    System.out.println(azerty);
     /** implicit casting **/
     //We put a smaller value in a bigger or the same container.
     int i = 1;
@@ -75,5 +73,7 @@ public class MyClass
     //but
     byte bbb = 3;
     bbb += 7;//implicit casting!!
+    
+    int i9 = (int)(1l+1l);//result is long because it's under
   }
 }

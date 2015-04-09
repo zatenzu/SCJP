@@ -85,6 +85,11 @@ public class _Static
   static class MyStaticNestedClass{
   }
   
+  /** Shadowing( the local var hides the class variable myVar **/
+  static void MyStaticMethod(Integer myVar){
+    System.out.println(myVar);
+  }
+  
   /**
    * Inner class or nested class
    * @author tda

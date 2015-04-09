@@ -24,10 +24,12 @@ public /** abstract (implicit) **/ interface _Interface
   /** Methods **/
   void myMethod1();
   public abstract void myMethod2();
-  //public and abstract are implicit
+  /**public and abstract are implicit**/
   
 //  void myNonAbtractMethod(){}; --> Forbidden, only abstract method in interface!
 //  abstract static void myStaticMethod(){};//--> Forbidden, cannot be static in interface
   
   /** Methods can only be abstract and public **/
 }
+//can have more than one interface per file but only one public
+interface Blabla{}

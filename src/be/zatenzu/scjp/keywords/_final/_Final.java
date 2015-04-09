@@ -14,6 +14,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   //Cannot extends a final class. If you do that -> compiler error !!!
   
   //A instance variable who isn't defined at the declaration point is called 'blank final' variable
+  //must be initialized in each constructors
   final boolean myVar;
   //A static 'blank final' instance variable must be initialized in the static bloc code where it is declared
   static final boolean myVarBis = true;

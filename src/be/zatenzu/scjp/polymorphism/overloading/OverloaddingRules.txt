@@ -2,7 +2,7 @@
 - Must change the argument list
 - Can change the return type
 - Can change access modifier
-- Can declare new or broader checked exceptions
+- Can throw differente exception
 - A method can be overloaded in the same class or in a subclass
 ===============================================================
 - varType > instanceType (compilation time, not runtime)
@@ -10,6 +10,9 @@
 - widening > var args
 - boxing > var args
 - widening + boxing = error
+- unboxing + widening = ok
 - widening + var args = ok
 - boxing + var args = ok
 - boxing + IS-A = ok
+- widening with wrappers doesn't work!
+Wrapper parameter with wrapper argument = Unboxing + Widening + Boxing. (Widening + Boxing is forbidden)!
