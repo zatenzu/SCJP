@@ -38,3 +38,4 @@ class _Class
   }
 }
 //public class A{}//compilation error
+//protected class A{}//compilation error

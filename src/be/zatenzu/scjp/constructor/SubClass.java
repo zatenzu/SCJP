@@ -3,10 +3,11 @@ package be.zatenzu.scjp.constructor;
 
 public class SubClass extends Mother
 {
-  //Constructors are never inhertited!
-  //a sub class must have at least one constructor
-  //with the same signature as a mother class constructor
-  //excepted the default constructor
+  /**
+   * Constructors are never inhertited!
+  a sub class must have at least one constructor
+  with the same signature as a mother class constructor
+  excepted the default constructor**/
   
   //the auto-created(implicit default constructor) constructor will:
   // -have the same access modifier than the class

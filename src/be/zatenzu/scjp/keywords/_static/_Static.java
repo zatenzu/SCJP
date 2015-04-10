@@ -35,6 +35,10 @@ public class _Static
   
   public static void main(String[] args)
   {
+    /** no inheritance with static members!!! **/
+//    _Static.myClassVar;
+//    _Static.myStaticMethodA();
+    
 //    System.out.println(myInt);//myInt is not static and we are in a static method.
     System.out.println(myVar);//static var can be used whitout initialisation, no NPE, no compilation faild, just print null
     System.out.println(_Static.myVar); //no instance is required to access to myVar
@@ -67,6 +71,7 @@ public class _Static
    * Static methods
    */
   public static int myStaticMethod(){
+//    static Integer i = 0;//cannot declare static local var
     //Cannot make a static reference to the non-static field myInt
     //return myInt; -> forbidden
     return myVar;

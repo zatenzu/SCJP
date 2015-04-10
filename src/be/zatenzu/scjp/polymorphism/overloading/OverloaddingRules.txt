@@ -9,6 +9,8 @@
 - widening > boxing
 - widening > var args
 - boxing > var args
+- IS-A > var args
+==> varargs lose all the time
 - widening + boxing = error
 - unboxing + widening = ok
 - widening + var args = ok

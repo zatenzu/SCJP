@@ -11,7 +11,7 @@ public class Constructor
   }
   
   {
-    System.out.println("This block runs after each constructor call");
+    System.out.println("This block runs before each constructor call");
   }
   //All access modifiers are allowed
   //Constructor must have the same name as the Class
@@ -27,7 +27,10 @@ public class Constructor
   // -have as first line super();ex Constructor(){super();}
   
   //can be protected
-  protected Constructor(int i){j=0;}
+  protected Constructor(int i){
+    j=0;
+    System.out.println("This block runs during constructor call");
+  }
   
   //can be default package
   Constructor(float i){j=0;}
@@ -54,5 +57,6 @@ public class Constructor
   public static void main(String[] args)
   {
     new Constructor();
+    new Constructor(1);
   }
 }

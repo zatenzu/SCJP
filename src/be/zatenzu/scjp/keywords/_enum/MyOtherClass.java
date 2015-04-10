@@ -20,13 +20,13 @@ public class MyOtherClass
     //give the index of the constant
     System.out.println(a.B.ordinal());
     
-    /** values **/
+    /** values() **/
     //return an array with all enum values
     System.out.println(_Enum.values());//_Enum[]! Not an Iterator
     
     /** compareTo() **/
     //java.lang.Enum implements Comparable!
-    System.out.println(a.compareTo(a.A));
+    System.out.println(a.compareTo(a.A));//compare ordinal
     
     /** name() **/
     //give the name of the constant
