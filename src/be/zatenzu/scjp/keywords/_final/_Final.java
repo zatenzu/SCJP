@@ -49,6 +49,11 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
     //myFinalList = new ArrayList<String>(); forbidden, the reference is modified
   }
   
+  public void myMethodAB(final Class1 class1){
+    class1.x = 2;//modify the instance
+//    class1 = new Class1();//cannot creat new instance
+  }
+  
   /**
    * Final class, the class can't be a super class.
    * extends Object -> OK

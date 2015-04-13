@@ -39,6 +39,7 @@ public class Arrays
 //    myTab size = 5
     System.out.println(myTab[5]);//Runtime exception!
     
+    /** IS-A test ok **/
     Mother[] motherArray = new Mother[2];
     MyInterface[] myInterfaceArray = new MyInterface[2];
     SubClass[] subClassArray = new SubClass[2];
