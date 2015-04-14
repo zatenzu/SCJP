@@ -20,7 +20,9 @@ public class Arrays
   //or like this
   int[] ib = new int[3];
   //or like this
-  int[] ic = {1,2,3};
+  int[] ic = {1,2,3,};
+  //
+  int[] id = {1,2,3,};//last , is useless but legal, size is 3 not 4!
   
   int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
   
@@ -29,6 +31,8 @@ public class Arrays
   
   public static void main(String[] args)
   {
+    int[] a = new Arrays().ic;
+    System.out.println(a.length);
     //Array elements are always given the default value
     //myTab->[0.0,0.0,0.0,0.0,0.0]
     for(int i = 0; i < myTab.length; i++){
