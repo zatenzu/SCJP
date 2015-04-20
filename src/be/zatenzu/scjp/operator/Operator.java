@@ -34,6 +34,12 @@ public class Operator
    /**  Compound assignment operators   */
   /*************************************/
     //+=,-=,*=,/=
+//    int x *= 2+5;//forbidden, compound assignment operators
+    int x = 1;
+    
+    x *= 2+5;
+    //equals to
+    x = x * (2+5);
 
     /*************************************/
    /**  Relational operators            */
@@ -84,6 +90,7 @@ public class Operator
      System.out.println(true ^ false);//true
      System.out.println(false ^ true);//true
      System.out.println(false ^ false);//false
+     //The two operators are evalued
      
      //logical operator !
      if(false && false || true){

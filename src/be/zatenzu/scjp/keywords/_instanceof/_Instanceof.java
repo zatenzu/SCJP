@@ -12,7 +12,7 @@ public class _Instanceof
 {
   public static void main(String[] args)
   {
-    Object list = new ArrayList<>();
+    Object list = new ArrayList<String>();
     
     if(list instanceof Object){
       System.out.println("Yes, it's an Object!");
