@@ -23,6 +23,6 @@ public class _Catch
 //    catch(SubClassException fex){}//Forbidden, compiler error!
     //SubClassException already catch by the MothException catch block
     
-    //=> if you add catch block with exception that could be never thrown -> Compilator error 
+    /**=> if you add catch block with exception that could be never thrown -> Compilator error**/
   }
 }

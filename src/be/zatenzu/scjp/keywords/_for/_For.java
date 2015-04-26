@@ -22,7 +22,7 @@ public class _For
     }
     
     1) initialization step, only once. Any loop control variable can be initialized here.
-    2) Boolean expression is evaluated. If is true, the body is executed, false
+    2) Boolean expression is evaluated at each iteration. If is true, the body is executed, false
     the flow control go after the for statement.
     3) After the body of the loop executes, the flow control jump to the update statement.
     Any loop control variable can be updated here, and more (new instance of external loop variable etc ..)

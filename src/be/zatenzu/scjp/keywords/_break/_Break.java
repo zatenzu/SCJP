@@ -48,13 +48,13 @@ public class _Break
     
   //loop statements
   ////for, while and do while
-  System.out.println("For loop with break");
+    System.out.println("For loop without break");
   
   for(int cpt = 0; cpt < 10; cpt++){
     System.out.println("cpt=" + cpt);
   }
   
-  System.out.println("For loop without break");
+  System.out.println("For loop with break");
   
   for(int cpt = 0; cpt < 10; cpt++){
     if(cpt == 4)

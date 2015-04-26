@@ -92,6 +92,15 @@ public class _Switch
 //    }
     //Forbidden
     
+    
+    byte bbb = 3;
+    switch(bbb){
+      case 1:
+        break;
+//      case 400: //Too high! Compilation error
+//        break;
+    }
+    
     /** See also to the break keyword package !**/
   }
 }

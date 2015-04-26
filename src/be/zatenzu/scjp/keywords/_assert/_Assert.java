@@ -31,7 +31,15 @@ public class _Assert
     // Appropriate and correct words mean "should".
     // Is it a correct way to do that? Means: Is it legal and it should be done like that?
     
-    //TODO: Add correct usage of assert keyword Page 392-394
+    /** Appropriate usage**/
+    // Appropriate
+    // - Validate private methode argument
+    // - To check case that never ever supposed to happen
+    
+    // Unappropriate
+    // - Validate commande line argument
+    // - Validate public methode argument
+    // - Don't use assert expression that case side effect
     
     
   }
