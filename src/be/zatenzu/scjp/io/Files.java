@@ -104,21 +104,22 @@ public class Files
 //    fw.write(int c);
 //    fw.write(String str);
 //    fw.write(char[] charBuffer, int off, int len);
+//    off=position to start, len number of char to write
 //    fw.write(String charBuffer, int off, int len);
     
     /** public void flush() throw IOException**/
 //    fw.flush();
     
     /** public int read(char[] array) **/
-//    fr.read();
-//    fr.read(char[] cBuf)
-//    fr.read(CharBuffer target)
+//    fr.read();//return the char read or -1
+//    fr.read(char[] cBuf)//return number of char read or -1
+//    fr.read(CharBuffer target)//return number of char read or -1
 //    fr.read(char[] cbuf, int off, int len)
 
     //read the file, put content to the array and return the number of read char
     
     /*************************************/
-   /**  BufferredWriter/BufferedReader **/
+   /**  BufferedWriter/BufferedReader **/
   /*************************************/
     /** Constructors **/
 //    new BufferWriter(Writer w)
