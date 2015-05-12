@@ -2,6 +2,7 @@
 - Must have the same argument list
 - Must not throw new checked exception
 - Can throw a subtype of checked exception
+- Can ommit to redefine the throw exception
 - Cannot throw a super type of checked exception (= compilation error)
 - Can throw new unchecked exception
 - Can throw supertype unchecked exception

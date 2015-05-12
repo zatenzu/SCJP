@@ -12,6 +12,8 @@ public class CommonExceptions
     AssertionError assertionError;
     ExceptionInInitializerError exceptionInInitializerError;
     StackOverflowError stackOverflowError;
+    //If the infinit loop doesn't put elements on the stack(local var, call method), the applcation never end
+    //but no stackoverflowerror will throw.
     NoClassDefFoundError noClassDefFoundError;
     
     //Runtime
@@ -20,7 +22,7 @@ public class CommonExceptions
     IllegalArgumentException argumentException;
     IllegalStateException illegalStateException;
     NullPointerException nullPointerException;
-    NumberFormatException formatException;
+    NumberFormatException formatException;//sub classe of IllegalArgumentException 
     
     //! RuntimeException
     IOException ioException;

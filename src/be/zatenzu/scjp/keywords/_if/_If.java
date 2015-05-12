@@ -55,6 +55,15 @@ public class _If
     boolean b = true ? true : false;// boolean expression ? if the expression is true : if the expression is false
     /* double ternary operator  */
     boolean bb = true ? true ? true : false : false;
+    
+//    int j = 0;
+//    int[] myTab = {1,2,3};
+//    for(j : myTab){
+//    }
+    //==> j must be decalred in the for statement
+//  int[] myTab = {1,2,3};
+//  for(int j : myTab){
+//  }
   }
   
   public static boolean printSomething(){
