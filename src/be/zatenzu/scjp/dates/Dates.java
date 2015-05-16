@@ -13,24 +13,50 @@ public class Dates
       /*************************************/
      /**  java.util.Date                 **/
     /*************************************/
-    Date now = new Date();
+    /** Constructors **/
+    Date now = new Date();//now
     Date date = new Date(0L);//01/01/1970
-    System.out.println(now);
-    System.out.println(date);
+    
+    /** Methodes **/
+    //Long getTime();
     System.out.println(now.getTime());//get Date as milliseconds from 01/01/1970 
     
       /*************************************/
      /**  java.util.Calendar             **/
-    /*************************************/ 
+    /*************************************/
+    /** Constructors **/
     Calendar cNow = Calendar.getInstance();//now
 //    Calendar cNow = new Calendar();//Abstract !
-    cNow.getTime();;
+    
+    /** Methodes **/
+    //Date getTime();
+    cNow.getTime();
+    //void setTime(Date date);
+    cNow.setTime(new Date());
+    //void roll(int field, int value)
+    //void roll(int field, boolean rollUp)
     cNow.roll(Calendar.DAY_OF_WEEK, 4);//add 4 days without incr weeks if needed
-    cNow.roll(Calendar.DAY_OF_WEEK, 4);//add 4 days with incr weeks if needed
+    //void add(int field, int value)
+    cNow.add(Calendar.DAY_OF_WEEK, 4);//add 4 days with incr weeks if needed
+    //int getFirstDayOfWeek()
+    cNow.getFirstDayOfWeek();//MONDAY (in France), SUNDAY (in US)
+    //int get(int field)
+    cNow.get(Calendar.DAY_OF_MONTH);
     
      /*************************************/
-    /**  java.util.DateFormat           **/
+    /**  java.text.DateFormat           **/
    /*************************************/
+    /** Constructors **/
+    //Abstract class!
+//    static DateFormat getInstance();//get date and time format
+//    static DateFormat getDateInstance();//get date format
+//  DateFormat dff = DateFormat.getDateInstance();
+//  DateFormat dff = DateFormat.getDateInstance(int style);
+//  DateFormat dff = DateFormat.getDateInstance(int style, Local locale);
+    
+    /** Methodes **/
+    //String format(Date d);
+    //Date parse(String dateAsString) throw ParseException
     DateFormat df = DateFormat.getInstance();
     System.out.println(df.format(now));
     try
@@ -43,3 +69,4 @@ public class Dates
     }
   }
 }
+

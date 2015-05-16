@@ -25,7 +25,7 @@ public class Files
     //new File(String parentPathnameString, String childPathnameString) throw NPE
     //new File(File parentAbstractPathnameString, String childPathnameString) throw NPE
     //new File(URI uri) throw NPE and IllegalArgumentException
-    File file = new File("deleteMe.txt");//this file doesn't exist yet
+    File file = new File("c:\\deleteMe.txt");//this file doesn't exist yet
     
     /** public boolean exists() **/
     file.exists();//can throw SecurityException(RuntimeException)
@@ -39,6 +39,7 @@ public class Files
     catch (IOException e)
     {}
     //return true if the file is created
+    //if the file already exists, return false.
     
     /** public boolean delete() **/
     file.delete();//can throw SecurityException(RuntimeException)
@@ -73,13 +74,14 @@ public class Files
     /*************************************/
     FileWriter fw;
     FileReader fr;
+    File fileToWriteAndRead = new File("c:\\deletMe2.txt");
     char[] in = new char[50];
     try{
-      fw = new FileWriter(file);//create the file on the disk!
-      fw.write("Hello!\n How are you?\n");//write two line in the file
+      fw = new FileWriter(fileToWriteAndRead);/**create the file on the disk!**/
+      fw.write("Hello!\nHow are you?\n");//write two lines in the file
       fw.flush();//flush to make sure that all char are in the file before closing
       fw.close();//close stream
-      fr = new FileReader(file);
+      fr = new FileReader(fileToWriteAndRead);
       fr.read(in);//read file content to the char array
       fr.close();//close stream
     }
@@ -140,6 +142,7 @@ public class Files
   /*************************************/
     /** Constructors **/
 //    PrintWriter pw = new PrintWriter(File file);//FileNotFoundException, SecurityException
+    //create the file!!
 //    PrintWriter pw = new PrintWriter(OutputStream out)
 //    PrintWriter pw = new PrintWriter(String fileName) FileNotFoundException, Security
 //    PrintWriter pw = new PrintWriter(Writer out)
@@ -156,5 +159,15 @@ public class Files
 //    pw.format(String format, Object... args) IllegalArgumentException and NPE if format is null
 //    pw.format(Local l, String format, Object... args) IllegalArgumentException and NPE if format is null
     /** printf and format are the same! **/
+    
+    try{
+      File fileToDelete3 = new File("c:\\deleteMe3.txt");
+      PrintWriter pw = new PrintWriter(fileToDelete3);
+      pw.flush();
+      pw.close();
+    }
+    catch(IOException ioe){
+      
+    }
   }
 }

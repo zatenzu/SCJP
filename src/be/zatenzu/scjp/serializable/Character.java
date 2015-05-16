@@ -82,4 +82,6 @@ public class Character extends MyNonSerializableSuperClass implements Serializab
    * you must do the defaultReadObject before to read something else!!!
    * ==> java.io.StreamCorruptedException !
    */
+  
+  /** defaultWriteObject and defaultReadObject must be called in respectively writeObject and readObject **/
 }

@@ -7,26 +7,51 @@ public class ScanIn
 {
   public static void main(String[] args)
   {
-    //read the input line in the Console and search for 'e'
-    System.out.print("input:");
+    
+    /*************************************/
+   /**  java.util.Scanner              **/
+  /*************************************/
+    /** Constructors **/
+//    new Scanner(File f)
+//    new Scanner(File source, String charsetName)
+//    new Scanner(InputStream is)
+//    new Scanner(InputStream is, String charsetName)
+//    new Scanner(Path source)
+//    new Scanner(Path source, String charsetName)
+//    new Scanner(String s)
+
+    
+    /** Methodes **/
+//    findInLine(String pattern)
+//    findInLine(Pattern pattern)
+    System.out.print("in:");
     System.out.flush();
     try{
-      Scanner scanner = new Scanner(System.in);
+      Scanner s = new Scanner(System.in);
       String token;
       do{
-        token = scanner.findInLine("e");
-        System.out.println("found=" + token);
+        token = s.findInLine("aba?");
+        System.out.println("found:" + token);
       }while(token != null);
-    }catch(Exception ex){}
+    }
+    catch(Exception ex){
+      ex.printStackTrace();
+    }
+    
+    //hasNext();
     
     System.out.print("input:");
     System.out.flush();
     try{
-      Scanner scanner2 = new Scanner("My String");
+//      Scanner scanner2 = new Scanner("bla blab 4 lab 5L la true 45");
+      Scanner scanner2 = new Scanner("45");
       while(scanner2.hasNext()){
         System.out.println(scanner2.next());
+        System.out.println(scanner2.nextInt());
+        System.out.println(scanner2.nextLong());
+        System.out.println(scanner2.nextBoolean());
       }
-    }catch(Exception ex){}
+    }catch(Exception ex){ex.printStackTrace();}
     
   }
 }

@@ -69,10 +69,11 @@ public class Serializer implements Serializable
   -[HEAL:Health potion]
   x=0//--> Transient field is rested to the default value (null for Object)
   ValueFromMySuperConstructor//--> !!!!
+  1//static not serialized
   */
   
   /**
-   * When the object is desirialized, the constructor is not called!
+   * When the object is deserialized, the constructor is not called!
    * So fields had the value that they had before the serialization
    * BUT: inherited fields from a nonserializable super class are set
    * by the super constructor!!!

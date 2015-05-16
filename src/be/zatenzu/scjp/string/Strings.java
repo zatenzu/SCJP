@@ -105,10 +105,11 @@ public class Strings
     //rty
     
     /** public String[] split(String regex) **/
-    String[] stringArray = "a2*54z*aea*zr*54*".split("\\*");
+    String[] stringArray = "a2*54z*aea**zr*54*".split("\\*");
     for(String s : stringArray){
       System.out.println(s);
     }
+    //** produce --> ""
     //see Regex package
     
     
