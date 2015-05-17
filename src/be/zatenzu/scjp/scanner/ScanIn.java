@@ -12,12 +12,12 @@ public class ScanIn
    /**  java.util.Scanner              **/
   /*************************************/
     /** Constructors **/
-//    new Scanner(File f)
-//    new Scanner(File source, String charsetName)
+//    new Scanner(File f) FileNotFoundException
+//    new Scanner(File source, String charsetName) FileNotFoundException, IllegalArgumentException 
 //    new Scanner(InputStream is)
-//    new Scanner(InputStream is, String charsetName)
-//    new Scanner(Path source)
-//    new Scanner(Path source, String charsetName)
+//    new Scanner(InputStream is, String charsetName) IllegalArgumentException 
+//    new Scanner(Path source)IOException
+//    new Scanner(Path source, String charsetName)IOException, IllegalArgumentException
 //    new Scanner(String s)
 
     

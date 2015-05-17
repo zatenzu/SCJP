@@ -51,7 +51,7 @@ public class Regex
 //    0[x-X]+ => 0 followed by one x or one X
 //    (0[x-X])+ => 0 followed by x or X one time
     
-    //. = any char
+    //. = any char (whitespace is a char)
     //Escaping special char !!! . = any char, \. = compilator error, \\. = .
   }
 }

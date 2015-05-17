@@ -66,11 +66,14 @@ public class Files
     //create the directory and parents directories if needed and return true if the directory is created
     
     /** public boolean renameTo(File f) **/
-    file.renameTo(file);//can throw SecurityException(RuntimeException) and NPE
+    File currentFile = new File("c:\\renameMe.txt");
+    File renamedFile = new File("c:\\renamedFile.txt");
+    System.out.println(currentFile.renameTo(renamedFile));//can throw SecurityException(RuntimeException) and NPE
     //rename the file to f and return true if it's done
+    //if the file doesn't exist, just return false
     
       /*************************************/
-     /**  FileWriter/Reader              **/
+     /**  FileWriter/FileReader          **/
     /*************************************/
     FileWriter fw;
     FileReader fr;
@@ -95,8 +98,8 @@ public class Files
 //    new FileWriter(FileDescriptor fileDescriptor);
     
 //    new FileReader(File file) throw FileNotFoundException ( extends IOException)
-//    new FileReader(FileDescriptor)
 //    new FileReader(String fileName) throw FileNotFoundException ( extends IOException)
+//    new FileReader(FileDescriptor)
     
     /** public void close() throw IOException **/
     //close the stream
@@ -112,11 +115,11 @@ public class Files
     /** public void flush() throw IOException**/
 //    fw.flush();
     
-    /** public int read(char[] array) **/
+    /** public int read(char[] array) throw IOException**/
 //    fr.read();//return the char read or -1
 //    fr.read(char[] cBuf)//return number of char read or -1
-//    fr.read(CharBuffer target)//return number of char read or -1
 //    fr.read(char[] cbuf, int off, int len)
+//    fr.read(CharBuffer target)//return number of char read or -1
 
     //read the file, put content to the array and return the number of read char
     
@@ -142,13 +145,13 @@ public class Files
   /*************************************/
     /** Constructors **/
 //    PrintWriter pw = new PrintWriter(File file);//FileNotFoundException, SecurityException
+//    PrintWriter pw = new PrintWriter(File f, String charSet) FileNotFoundException, Security
+//    PrintWriter pw = new PrintWriter(String fileName) FileNotFoundException, Security
+//    PrintWriter pw = new PrintWriter(String fileName f, String charSet) FileNotFoundException, Security
     //create the file!!
 //    PrintWriter pw = new PrintWriter(OutputStream out)
-//    PrintWriter pw = new PrintWriter(String fileName) FileNotFoundException, Security
-//    PrintWriter pw = new PrintWriter(Writer out)
-//    PrintWriter pw = new PrintWriter(File f, String charSet) FileNotFoundException, Security
-//    PrintWriter pw = new PrintWriter(String fileName f, String charSet) FileNotFoundException, Security
 //    PrintWriter pw = new PrintWriter(OutputStream out, boolean autoFlush)
+//    PrintWriter pw = new PrintWriter(Writer out)
 //    PrintWriter pw = new PrintWriter(Writer w, boolean autoFlush)
     
     /** public PrintWriter printf **/
@@ -159,15 +162,5 @@ public class Files
 //    pw.format(String format, Object... args) IllegalArgumentException and NPE if format is null
 //    pw.format(Local l, String format, Object... args) IllegalArgumentException and NPE if format is null
     /** printf and format are the same! **/
-    
-    try{
-      File fileToDelete3 = new File("c:\\deleteMe3.txt");
-      PrintWriter pw = new PrintWriter(fileToDelete3);
-      pw.flush();
-      pw.close();
-    }
-    catch(IOException ioe){
-      
-    }
   }
 }

@@ -82,7 +82,10 @@ public class Strings
     // /!\ ==> mainString.length() and myArray.length !!
     
     /** public String replace(char old, char new) **/
+    /** public String replace(CharSequence old, CharSequence new) **/
     System.out.println(mainString.replace('z', 'Z'));//aZerty
+    System.out.println(mainString.replace("z", "Z"));//aZerty
+    //replace all old char with new char.
     
     /** public String substring(int begin) and  **/
     /** public String substring(int begin, int end) **/
@@ -112,7 +115,6 @@ public class Strings
     //** produce --> ""
     //see Regex package
     
-    
     /** Format **/
 //    System.out.printf("String to format", args);
     //%[arg_index$][flag][width][.precision]conversion char
@@ -135,7 +137,7 @@ public class Strings
     System.out.printf("%1$b | %2$c | %3$d | %4$f | %5$s", true, '#', -6, 34.4, "String");
     System.out.println("\n");
     //true | # | -6 | 34,400000 | String
-    System.out.printf("%1$b | %2$c | %3$+(d | %4$+1f | %5$s", true, '#', -6, 34.4, "String");
+    System.out.printf("%1$b | %2$c | %3$+(d | %4$+1f | %5$s", true, '#', -6, 34.44, "String");
     System.out.println("\n");
     //=> if error IllegalFormatConversionException
     //TODO: I don't understand :'(

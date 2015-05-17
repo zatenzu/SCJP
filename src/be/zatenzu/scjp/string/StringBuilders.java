@@ -13,7 +13,7 @@ public class StringBuilders
     /*************************************/
     StringBuilder mainString = new StringBuilder("azerty");
     
-    /** public void StringBuilder append(String s) **/
+    /** public StringBuilder append(String s) **/
     mainString.append("ui");
     System.out.println(mainString);//azertyui
     
@@ -28,6 +28,6 @@ public class StringBuilders
     /** public StringBuffer reverse() **/
     System.out.println(mainString.reverse());//iuuiopyza
     
-    // All methods return the reference to this object
+    // All methods return the reference to this object!! (for chaining!)
   }
 }

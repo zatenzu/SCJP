@@ -23,6 +23,7 @@ public class Character extends MyNonSerializableSuperClass implements Serializab
   public static int characterCounter = 0;//will not be serialized because it's a part of the class, not the instance object!
   
   public Character(int level, String nom, int pv, int pvMax, String specialType, CharacterState state){
+    System.out.println("Character constructor call");
     this.level = 1;
     this.nom = nom;
     this.pv = pvMax;
