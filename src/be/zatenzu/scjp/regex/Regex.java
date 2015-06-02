@@ -16,12 +16,13 @@ public class Regex
     while(m.find()){
       System.out.print(m.start());//0 and 4 but not 2!
       System.out.print(m.end());//3 and 7 (return the position of the last char matched + 1)
+      System.out.print(m.group());// = s.substring(m.start(), m.end());
       System.out.print("\n");
     }
     //what's append?
-    //first occurence starts at 0 and ends at 2
+    //first occurence starts at 0, ends at 2 and aba
     //search for the second occurence from 3
-    //second occurence starts at 4 and ends at 6
+    //second occurence starts at 4, ends at 6 and aba
     //search for the thrid occurence from 7
     
     System.out.print("========\n");

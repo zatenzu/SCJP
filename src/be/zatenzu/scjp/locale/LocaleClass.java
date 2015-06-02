@@ -3,6 +3,7 @@ package be.zatenzu.scjp.locale;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Locale;
 
@@ -40,5 +41,16 @@ public class LocaleClass
     System.out.println(nnf.format(value));//3,4 €
     NumberFormat ncf = NumberFormat.getCurrencyInstance(localeBE);
     System.out.println(ncf.format(value));//3,4 €
+    
+    /** parse(String s) throw ParseException (extends not a RuntimeException) **/
+    try
+    {
+      System.out.println(ncf.parse("3,4 €"));
+    }
+    catch (ParseException e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
 }

@@ -30,12 +30,13 @@ public class Objects
     /*************************************/
     /** equals rules:
      * Reflexive: instanceX.equals(instanceX) return always true!
-     * Symmetric: if instanceX.equals(instanceY)
+     * Symmetric: if instanceX.equals(instanceY) return true, then instanceY.equals(instanceX) must return true
      * Transitive: if instanceX.equals(instanceY) return true and instanceX.equals(instanceZ) return true
-     *  then instanceY.equals(instanceZ) must return true
+     * then instanceY.equals(instanceX) must return true
      * Consistent: For instanceX and instanceY, multiple call of equals must return
      *  the same value if fields what are used in equals method aren't modified.
      * Null: instanceX.equals(null) return always false.
+     * If equals isn't overridded, compare reference (==)
      */
     //Don't forget to use if(obj instanceof MyClass) ==> ClassCastException!
     
