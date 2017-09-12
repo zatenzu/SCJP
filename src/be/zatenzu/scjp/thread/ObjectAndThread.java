@@ -6,11 +6,11 @@ public class ObjectAndThread
   public static void main(String[] args)
   {
     /** wait() throws InterruptedException **/
-    //wait until notify
+    //release the lock on the object and the current thread waits until notify on the object
     /** notify() **/
-    //notify
+    //wake up the first thread who calls wait on this object
     /** notifyAll() **/
-    //notifyAll
+    //wake up all thread who call wait on this object
     
     
     // these methods can be called only if the current thread has locked the object.
